@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+    cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"><text y="24" font-size="24">🚗</text></svg>') 16 16, auto;
+}
+
+.bio-container {
+    display: flex;
+    height: 100vh;
+}
+
+.image-column {
+    flex: 0 0 50%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    border-right: 1px solid #000;
+}
+
+.image-column img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.text-column {
+    flex: 0 0 50%;
+    margin-left: 50%;
+    padding: 60px 80px;
+    overflow-y: auto;
+    height: 100vh;
+}
+
+.text-column h1 {
+    font-size: 48px;
+    font-weight: normal;
+    margin-bottom: 30px;
+}
+
+.text-column h2 {
+    font-size: 36px;
+    font-weight: normal;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.text-column p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    .bio-container {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .image-column {
+        position: relative;
+        width: 100%;
+        height: 50vh;
+        flex: none;
+        border-right: none;
+        border-bottom: 1px solid #000;
+    }
+
+    .text-column {
+        margin-left: 0;
+        width: 100%;
+        height: auto;
+        padding: 40px 20px;
+    }
+}
