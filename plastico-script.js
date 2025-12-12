@@ -3,8 +3,8 @@ let currentImageIndex = 0;
 let images = [];
 
 document.addEventListener('DOMContentLoaded', function() {
-    // Get all gallery images (including cueros images)
-    const galleryImages = document.querySelectorAll('.project-gallery img, .cueros-main-image img, .cueros-grid img');
+    // Get all gallery images (including cueros and personal images)
+    const galleryImages = document.querySelectorAll('.project-gallery img, .cueros-main-image img, .cueros-grid img, .personal-featured img, .personal-grid img');
 
     // Create lightbox HTML
     const lightboxHTML = `
@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function() {
         img.addEventListener('click', function() {
             // Get all images from the same section
             const section = this.closest('.project-section');
-            const sectionImages = section.querySelectorAll('.project-gallery img, .cueros-main-image img, .cueros-grid img');
+            const sectionImages = section.querySelectorAll('.project-gallery img, .cueros-main-image img, .cueros-grid img, .personal-featured img, .personal-grid img');
             images = Array.from(sectionImages);
 
             // Find the index of the clicked image within its section
