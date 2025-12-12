@@ -5,7 +5,9 @@
       "Bash(powershell -ExecutionPolicy Bypass -File:*)",
       "Bash(del \"c:\\Users\\Usuario\\Documents\\GitHub\\zfdocu\\temp_extract.ps1\")",
       "Bash(test:*)",
-      "Bash(cat:*)"
+      "Bash(cat:*)",
+      "Bash(dir \"c:\\Users\\Usuario\\Documents\\GitHub\\zfdocu\\PLASTICO\")",
+      "Bash(dir:*)"
     ],
     "deny": [],
     "ask": []
