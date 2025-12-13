@@ -127,9 +127,9 @@ body {
 
 /* Personal layout */
 .personal-layout {
-    max-width: 1400px;
+    max-width: 1000px;
     margin: 0 auto;
-    padding: 0 60px;
+    padding: 0 40px;
 }
 
 .personal-featured {
@@ -140,7 +140,7 @@ body {
 }
 
 .personal-featured img {
-    max-width: 100%;
+    max-width: 70%;
     height: auto;
     display: block;
     cursor: pointer;
