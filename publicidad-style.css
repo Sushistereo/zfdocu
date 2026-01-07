@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #f5f5f5;
+    font-family: Consolas, 'Courier New', monospace;
+    overflow: hidden;
+    cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"><text y="24" font-size="24">☺</text></svg>') 16 16, auto;
+}
+
+.popup-container {
+    position: fixed;
+    width: 216px;
+    height: 384px;
+    border: 2px solid #000;
+    background: #000;
+    z-index: 1;
+    cursor: move;
+}
+
+.popup-container iframe {
+    width: 100%;
+    height: 100%;
+    display: block;
+    pointer-events: none;
+}
+
+.popup-container:active iframe {
+    pointer-events: none;
+}
+
+.back-link {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background: #fff;
+    padding: 10px 20px;
+    border: 2px solid #000;
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+    z-index: 9999;
+    box-shadow: 3px 3px 0px rgba(0,0,0,0.3);
+}
+
+.back-link:hover {
+    background: #000;
+    color: #fff;
+}
+
+@keyframes shake {
+    0%, 100% { transform: translate(0, 0); }
+    10% { transform: translate(-5px, 5px); }
+    20% { transform: translate(5px, -5px); }
+    30% { transform: translate(-5px, -5px); }
+    40% { transform: translate(5px, 5px); }
+    50% { transform: translate(-5px, 5px); }
+    60% { transform: translate(5px, -5px); }
+    70% { transform: translate(-5px, -5px); }
+    80% { transform: translate(5px, 5px); }
+    90% { transform: translate(-5px, 5px); }
+}
+
+.popup-container.shaking {
+    animation: shake 0.5s;
+}
+
+.text-box {
+    position: fixed;
+    width: 216px;
+    height: 384px;
+    border: 2px solid #000;
+    background: #fff;
+    z-index: 1;
+    padding: 20px;
+    font-size: 14px;
+    overflow: hidden;
+    box-sizing: border-box;
+    cursor: move;
+}
+
+.text-box.shaking {
+    animation: shake 0.5s;
+}
+
+.fixed-text {
+    position: fixed;
+    left: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+    z-index: 9998;
+    pointer-events: none;
+}

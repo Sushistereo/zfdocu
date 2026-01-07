@@ -24,19 +24,19 @@ document.getElementById('cine-link').addEventListener('click', function(e) {
 
         // List of folders in Audiovisual\Cine
         const cineItems = [
-            'Archivos del Goce',
-            'Bernarda es la Patria',
-            'El Desfile',
-            'Entrecruces',
             'La Reserva',
-            'Las Hijas del Fuego',
             'Mujeres de mi Patria, Historia de las delegadas de Evita',
-            'Ob Scena',
-            'Pampa Stalingrado',
-            'Relato de Mar',
+            'Un espejo no-coincidente',
             'RESTART',
+            'Ob Scena',
+            'El Desfile',
             'Sinfonía de Cristal',
-            'Un espejo no-coincidente'
+            'Entrecruces',
+            'Relato de Mar',
+            'Bernarda es la Patria',
+            'Las Hijas del Fuego',
+            'Archivos del Goce',
+            'Pampa Stalingrado'
         ];
 
         // Populate the list

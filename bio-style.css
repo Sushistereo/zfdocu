@@ -42,12 +42,16 @@ body {
     overflow-y: auto;
     height: 100vh;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .text-column h1 {
-    font-size: 48px;
+    font-size: 20px;
     font-weight: normal;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
+    margin-top: 80px;
 }
 
 .text-column h2 {
@@ -58,7 +62,7 @@ body {
 }
 
 .text-column p {
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1.6;
     margin-bottom: 20px;
 }
