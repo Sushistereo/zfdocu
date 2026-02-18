@@ -144,9 +144,7 @@ body {
 
 .back-link {
     text-align: left;
-    margin-top: 80px;
-    padding-top: 40px;
-    border-top: 1px solid #eee;
+    margin-bottom: 60px;
 }
 
 .back-link a {
